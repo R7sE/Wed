@@ -73,10 +73,8 @@ $(function(){
     var linksContainer = $('#links');
     var baseUrl;
     for (var i = 1; i < 43; i++) {
-        baseUrl = 'photo/img' + i + '.jpg';
+        baseUrl = 'photo/img' + i;
         $('<a/>')
-            .append($('<img>').prop('src', baseUrl))
-            .prop('href', baseUrl)
             .prop('title', 'test')
             .attr('data-gallery', '')
             .appendTo(linksContainer);
