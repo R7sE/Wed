@@ -75,6 +75,8 @@ $(function(){
     for (var i = 1; i < 43; i++) {
         baseUrl = 'photo/img' + i;
         $('<a/>')
+            .append($('<img>').prop('src', baseUrl + '_s.jpg'))
+            .prop('href', baseUrl + '.jpg')
             .prop('title', 'test')
             .attr('data-gallery', '')
             .appendTo(linksContainer);
